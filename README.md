@@ -8,7 +8,7 @@
 * Allure Framework, есть несколько способов установке, выберите подходящий для вас по [ссылке](https://docs.qameta.io/allure/#_get_started)
 ## Запуск Тестов #
 В cmd перейдите в директорию проекта и введите `pytest -v --driver Chrome` или `pytest -v --driver Firefox`
-Вы можете запускать тесты в вебраузер в 'безголовом' режиме браузера, для этого перейдите в файле conftest.py раскомментируйте `chrome_options.add_argument('--headless')`
+Вы можете запускать тесты в 'безголовом' режиме браузера, для этого перейдите в файле conftest.py раскомментируйте `chrome_options.add_argument('--headless')`
 ## Запуск тестов с генерацией отсчётов Allure
 В cmd перейдите в директорию проекта и введите `pytest --alluredir="reporst" --driver Chrome` или `pytest --alluredir="reporst" --driver Firefox`
 * После завершения выполнения тестов сгенерируйте отсчёт `allure serve "reporst"`
